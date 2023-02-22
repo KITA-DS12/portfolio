@@ -17,13 +17,16 @@ const changePage = () => {
 </script>
 
 <template>
-  <v-card>
-    <v-tabs v-model="tab" align-tabs="center">
-        <v-tab v-for="link in links" :key="link" :value="link" @click="changePage">
-            {{ link }}
-        </v-tab>
-    </v-tabs>
-  </v-card>
+  <div align="center">
+    <v-sheet>
+      <v-img width="350px" src="src/assets/logo.png" style="margin-top: 40px; margin-bottom: 20px;" />
+      <v-tabs v-model="tab" align-tabs="center">
+          <v-tab v-for="link in links" :key="link" :value="link" @click="changePage">
+              {{ link }}
+          </v-tab>
+      </v-tabs>
+    </v-sheet>
+  </div>
 </template>
 
 <style scoped>

@@ -1,7 +1,4 @@
 <script setup>
-import Nav from "./components/Nav.vue"
-import Main from "./components/Main.vue"
-
 import { ref, computed } from 'vue'
 import { useStore } from 'vuex'
 
@@ -13,13 +10,8 @@ const page = computed(() => {
 </script>
 
 <template>
-  <v-app>
-    <Nav />
-    <Main />
-    <v-window v-model="page">
-      <v-if></v-if>
-    </v-window>
-  </v-app>
+  <v-sheet align="center">
+  </v-sheet>
 </template>
 
 <style scoped>
