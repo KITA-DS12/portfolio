@@ -20,9 +20,9 @@ const changePage = () => {
   <div align="center">
     <v-layout style="height: 30px">
       <v-system-bar color="deep-purple-lighten-3">
+        <v-icon icon="mdi-code-greater-than" />
         <p>PORTFOLIO</p>
         <v-spacer />
-        <v-icon icon="mdi-code-greater-than" @click="" />
       </v-system-bar>
     </v-layout>
     <v-sheet style="background-color: rgba(46, 46, 46, 0)">
@@ -35,3 +35,6 @@ const changePage = () => {
     </v-sheet>
   </div>
 </template>
+
+<style scoped>
+</style>
