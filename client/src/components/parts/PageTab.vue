@@ -15,12 +15,15 @@ const changePage = () => {
   store.commit('setPage', tab)
 }
 </script>
-
 <template>
-  <v-sheet align="center" style="background-color: transparent;">
-    <p>test</p>
-  </v-sheet>
+  <v-tabs v-model="tab" align-tabs="center" color="deep-purple-darken-2">
+    <v-tab class="background-tab" v-for="link in links" :key="link" :value="link" @click="changePage">
+      <p class="font-weight-bold">{{ link }}</p>
+    </v-tab>
+  </v-tabs>
 </template>
-
-<style scoped>
+<style>
+.background-tab {
+   background-color: rgba(255, 255, 255, 0.5);
+}
 </style>
