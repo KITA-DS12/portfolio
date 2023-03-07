@@ -2,7 +2,7 @@
 const histories = [
   {
     title: "中部大学第一高等学校",
-    subtitle: "電気電子システムコース",
+    subtitle: "電気情報コース",
     color: "deep-purple",
     start: "2017/04",
     end: "2020/03",
@@ -27,7 +27,7 @@ const histories = [
 ]
 </script>
 <template>
-  <div class="d-flex bordar-radius" style="padding-bottom: 80px">
+  <div class="d-flex bordar-radius" style="padding-bottom: 60px">
     <div>
       <h1 class="font-rampart text-deep-purple-darken-2">History</h1>
       <v-timeline class="text-blue-grey-darken-3" density="compact" align="start">

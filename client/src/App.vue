@@ -2,6 +2,7 @@
 import Nav from "./components/templates/Nav.vue"
 import Logo from "./components/templates/Logo.vue"
 import About from "./components/views/About.vue"
+import News from "./components/views/News.vue"
 
 import { ref, computed } from 'vue'
 import { useStore } from 'vuex'
@@ -18,6 +19,7 @@ const page = computed(() => {
       <v-main class="d-flex flex-row justify-center">
         <v-sheet width="550" class="background-clear">
           <About v-if="page=='ABOUT'" />
+          <News v-if="page=='NEWS'" />
           <Logo />
         </v-sheet>
       </v-main>
