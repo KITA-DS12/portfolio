@@ -3,6 +3,9 @@ import Nav from "./components/templates/Nav.vue"
 import Logo from "./components/templates/Logo.vue"
 import About from "./components/views/About.vue"
 import News from "./components/views/News.vue"
+import Skills from "./components/views/Skills.vue"
+import Works from "./components/views/Works.vue"
+import Contact from "./components/views/Contact.vue"
 
 import { ref, computed } from 'vue'
 import { useStore } from 'vuex'
@@ -20,6 +23,9 @@ const page = computed(() => {
         <v-sheet width="550" class="background-clear">
           <About v-if="page=='ABOUT'" />
           <News v-if="page=='NEWS'" />
+          <Skills v-if="page=='SKILLS'" />
+          <Works v-if="page=='WORKS'" />
+          <Contact v-if="page=='CONTACT'" />
           <Logo />
         </v-sheet>
       </v-main>
